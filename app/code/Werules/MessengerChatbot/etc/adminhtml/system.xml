@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="werules" sortOrder="999" translate="label">
+			<label>General Settings</label>
+		</tab>
+		<section id="werules_messenger_chatbox" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>werules_messenger_chatbox</label>
+			<tab>werules</tab>
+			<resource>Werules_MessengerChatbox::config_werules_messengerchatbot</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>General Settings</label>
+				<field id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Enable</label>
+					<comment>Enable</comment>
+					<source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+				</field>
+				<field id="app_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>App ID</label>
+					<comment>Your App ID</comment>
+				</field>
+				<field id="page_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Page ID</label>
+					<comment>Your Facebook Page ID</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
