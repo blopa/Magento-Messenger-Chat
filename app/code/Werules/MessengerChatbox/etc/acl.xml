@@ -6,7 +6,7 @@
 				<resource id="Magento_Backend::stores">
 					<resource id="Magento_Backend::stores_settings">
 						<resource id="Magento_Config::config">
-							<resource id="Werules_MessengerChatbox::config_werules_messengerchatbot" title="werules_messenger_chatbox"/>
+							<resource id="Werules_MessengerChatbox::config_werules_messengerchatbox" title="werules_messenger_chatbox"/>
 						</resource>
 					</resource>
 				</resource>

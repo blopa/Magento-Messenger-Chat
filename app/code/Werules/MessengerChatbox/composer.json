@@ -1,5 +1,5 @@
 {
-    "name": "werules/module-messengerchatbot",
+    "name": "werules/module-messengerchatbox",
     "description": "Magento Messenger Chatbox",
     "license": "GPL-3.0",
     "authors": [
@@ -9,7 +9,7 @@
         },
         {
             "name": "Pablo Montenegro",
-            "email": "sucrilhoscomlasanhas@gmail.com"
+            "email": "contact@pablomontenegro.com.br"
         }
     ],
     "minimum-stability": "dev",

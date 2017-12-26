@@ -7,7 +7,7 @@
 		<section id="werules_messenger_chatbox" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
 			<label>werules_messenger_chatbox</label>
 			<tab>werules</tab>
-			<resource>Werules_MessengerChatbox::config_werules_messengerchatbot</resource>
+			<resource>Werules_MessengerChatbox::config_werules_messengerchatbox</resource>
 			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
 				<label>General Settings</label>
 				<field id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
