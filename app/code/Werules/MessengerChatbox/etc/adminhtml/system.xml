@@ -1,11 +1,11 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
 	<system>
-		<tab id="werules" sortOrder="999" translate="label">
-			<label>General Settings</label>
+		<tab id="werules_messenger_chatbox" sortOrder="999" translate="label">
+			<label>Messenger Chatbox</label>
 		</tab>
 		<section id="werules_messenger_chatbox" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
-			<label>werules_messenger_chatbox</label>
+			<label>General Settings</label>
 			<tab>werules</tab>
 			<resource>Werules_MessengerChatbox::config_werules_messengerchatbox</resource>
 			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
@@ -16,17 +16,17 @@
 				]]></comment>
 				<field id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
 					<label>Enable</label>
-					<comment>Enable</comment>
+					<comment>Enable module?</comment>
 					<source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
 				</field>
 				<field id="app_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
-					<label>App ID</label>
+					<label>Facebook Application ID</label>
 					<comment><![CDATA[
 					Your App ID. Create one <a href="https://developers.facebook.com/docs/apps/register">here</a>.
 					]]></comment>
 				</field>
 				<field id="page_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
-					<label>Page ID</label>
+					<label>Facebook Page ID</label>
 					<comment><![CDATA[
 					Your Facebook Page ID. Click <a href="https://www.facebook.com/help/community/question/?id=378910098941520">here</a> to check yours.
 					]]></comment>
