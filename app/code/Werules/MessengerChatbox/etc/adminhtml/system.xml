@@ -10,6 +10,10 @@
 			<resource>Werules_MessengerChatbox::config_werules_messengerchatbox</resource>
 			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
 				<label>General Settings</label>
+				<comment><![CDATA[
+				<h3>Messenger Chatbox v1.0.0</h3>
+				<p>To use this module you'll have to add your domain to Facebook Whitelist. Click <a href="https://developers.facebook.com/docs/messenger-platform/reference/messenger-profile-api/domain-whitelisting#page_settings">her</a> to check how you can do that.</p>
+				]]></comment>
 				<field id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
 					<label>Enable</label>
 					<comment>Enable</comment>
@@ -17,11 +21,15 @@
 				</field>
 				<field id="app_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
 					<label>App ID</label>
-					<comment>Your App ID</comment>
+					<comment><![CDATA[
+					Your App ID. Create one <a href="https://developers.facebook.com/docs/apps/register">here</a>.
+					]]></comment>
 				</field>
 				<field id="page_id" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
 					<label>Page ID</label>
-					<comment>Your Facebook Page ID</comment>
+					<comment><![CDATA[
+					Your Facebook Page ID. Click <a href="https://www.facebook.com/help/community/question/?id=378910098941520">here</a> to check yours.
+					]]></comment>
 				</field>
 			</group>
 		</section>

@@ -24,7 +24,6 @@ namespace Werules\MessengerChatbox\Block;
 class Messenger extends \Magento\Framework\View\Element\Template
 {
     protected $_helper;
-    protected $_chatbotAPI;
 
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
@@ -36,29 +35,10 @@ class Messenger extends \Magento\Framework\View\Element\Template
         parent::__construct($context, $data);
     }
 
-    private function getMessengerInstance()
-    {
-        $api_token = $this->_helper->getConfigValue('werules_messenger_chatbox/general/api_key');
-        $messenger = $this->_chatbotAPI->initMessengerAPI($api_token);
-        return $messenger;
-    }
-
     public function getFacebookPageId()
     {
         $pageId = $this->getConfigValue('werules_messenger_chatbox/general/page_id');
-        if ($pageId)
-            return $pageId;
-
-        $messengerInstance = $this->getMessengerInstance();
-        $pageDetails = $messengerInstance->getPageDetails();
-        if (isset($pageDetails['id']))
-        {
-            $pageId = $pageDetails['id'];
-            $this->setConfigValue('werules_messenger_chatbox/general/page_id', $pageId);
-            return $pageId;
-        }
-
-        return '';
+        return $pageId;
     }
 
     public function getFacebookAppId()
@@ -67,31 +47,10 @@ class Messenger extends \Magento\Framework\View\Element\Template
         return $appId;
     }
 
-    public function isDomainWhitelabeled()
-    {
-        $enable = $this->getConfigValue('werules_messenger_chatbox/general/domain_whitelisted');
-        if ($enable)
-            return true;
-
-        $messengerInstance = $this->getMessengerInstance();
-//        $url = parse_url($_SERVER['SERVER_NAME'], PHP_URL_HOST);
-        $url = $_SERVER['SERVER_NAME'];
-        $domain = array($url);
-        $result = $messengerInstance->addDomainsToWhitelist($domain);
-        if (!isset($result['error']))
-        {
-            $this->setConfigValue('werules_messenger_chatbox/general/domain_whitelisted', '1');
-            return true;
-        }
-
-        return false;
-    }
-
     public function isChatboxEnabled()
     {
-        $enable = $this->getConfigValue('werules_messenger_chatbox/general/enable_messenger_box');
-        $isWhitelabeled = $this->isDomainWhitelabeled();
-        if ($enable && $isWhitelabeled)
+        $enable = $this->getConfigValue('werules_messenger_chatbox/general/enable');
+        if ($enable)
             return true;
 
         return false;
@@ -102,8 +61,8 @@ class Messenger extends \Magento\Framework\View\Element\Template
         return $this->_helper->getConfigValue($code);
     }
 
-    private function setConfigValue($field, $value)
-    {
-        $this->_helper->setConfigValue($field, $value);
-    }
+//    private function setConfigValue($field, $value)
+//    {
+//        $this->_helper->setConfigValue($field, $value);
+//    }
 }
