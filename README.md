@@ -1,6 +1,6 @@
 # Magento Messenger Chatbox
 
-Add a beutyful Messenger chatbox to your Magento store in less than 5 minutes.
+Add a beautiful Messenger chatbox to your Magento store in less than 5 minutes.
 
 <img src="/screenshots/chatbox.gif?raw=true" width="400px">
 
