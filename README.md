@@ -29,6 +29,8 @@ Go to **System > General Settings  > Messenger Chatbox**
 
 ## Release Notes
 ### Magento2
+- **v1.0.1:**
+    - Set Magento Store language as chatbox language
 - **v1.0.0:**
     - First release
 
@@ -42,7 +44,7 @@ A: I can try. Open a issue and I'll see what I can do.
 A: Thank you! You can help by codding more features, creating pull requests, or donating using Bitcoin: **1BdL9w4SscX21b2qeiP1ApAFNAYhPj5GgG**
 
 ## TODO
-- Add TODO list
+- Add option to choose another language (other than Store default)?
 
 ## License
 MIT License
