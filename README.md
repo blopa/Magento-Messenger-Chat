@@ -2,7 +2,7 @@
 
 Add a beutyful Messenger chatbox to your Magento store in less than 5 minutes.
 
-<img src="/screenshots/chatbox.gif?raw=true" width="550px">
+<img src="/screenshots/chatbox.gif?raw=true" width="400px">
 
 **Download the latest version [here](https://github.com/blopa/Magento-Messenger-Chat/releases/latest).**
 
@@ -23,6 +23,7 @@ Go to **System > General Settings  > Messenger Chatbox**
 #### Conversation
 
 ![ScreenShot](https://raw.githubusercontent.com/blopa/Magento-Messenger-Chat/master/screenshots/screenshot_1.jpg)
+
 
 ![ScreenShot](https://raw.githubusercontent.com/blopa/Magento-Messenger-Chat/master/screenshots/screenshot_2.jpg)
 
