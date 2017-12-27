@@ -1,11 +1,11 @@
 <?php
 /**
- * Magento Chatbot Integration
- * Copyright (C) 2017
+ * Magento Messenger Chatbox
+ * Copyright (C) 2017 Pablo Montenegro
  *
- * This file is part of Werules/Chatbot.
+ * This file is part of Werules/MessengerChatbox.
  *
- * Werules/Chatbot is free software: you can redistribute it and/or modify
+ * Werules/MessengerChatbox is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.

@@ -24,13 +24,16 @@ namespace Werules\MessengerChatbox\Block;
 class Messenger extends \Magento\Framework\View\Element\Template
 {
     protected $_helper;
+    protected $_store;
 
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
+        \Magento\Store\Api\Data\StoreInterface $store,
         \Werules\MessengerChatbox\Helper\Data $helperData,
         array $data = array()
     )
     {
+        $this->_store = $store;
         $this->_helper = $helperData;
         parent::__construct($context, $data);
     }
@@ -59,6 +62,11 @@ class Messenger extends \Magento\Framework\View\Element\Template
     private function getConfigValue($code)
     {
         return $this->_helper->getConfigValue($code);
+    }
+
+    public function getLocaleCode()
+    {
+        return $this->_store->getLocaleCode();
     }
 
 //    private function setConfigValue($field, $value)
